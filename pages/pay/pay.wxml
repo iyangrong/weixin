@@ -1,2 +1,20 @@
-<!--pages/pay/pay.wxml-->
-<text>pages/pay/pay.wxml</text>
+<view class="wrapper">
+  <view class="handBtn">
+    <image catchtap="selectColorEvent" src="{{ selectColor === 'black' ? 'https://img2018.cnblogs.com/blog/1249006/201904/1249006-20190428214729892-1885489530.png' : 'https://img2018.cnblogs.com/blog/1249006/201904/1249006-20190428214609652-787208397.png' }}" class="{{ selectColor === 'black' ? 'color_select' : '' }} black-select" data-color="black"
+      data-color-value="#1A1A1A"></image>
+    <image catchtap="selectColorEvent" src="{{ selectColor === 'red' ? 'https://img2018.cnblogs.com/blog/1249006/201904/1249006-20190428214804404-1692270577.png' : 'https://img2018.cnblogs.com/blog/1249006/201904/1249006-20190428214748575-69926411.png' }}" class="{{ selectColor === 'red' ? 'color_select' : '' }} red-select" data-color="red"
+      data-color-value="#ca262a"></image>
+    <button catchtap="retDraw" class="delBtn">重写</button>
+    <button bindtap="saveCanvasAsImg" class="delBt">保存</button>
+    <button bindtap="uploadCanvasImg" class="delB">上传</button>
+    <!-- <button catchtap="subCanvas" class="subBtn">完成</button> -->
+  </view>
+  <view class="handCenter">
+    <canvas class="handWriting" disable-scroll="true" bindtouchstart="uploadScaleStart" bindtouchmove="uploadScaleMove"
+      bindtouchend="uploadScaleEnd" bindtap="mouseDown" canvas-id="handWriting">
+    </canvas>
+  </view>
+  <view class="handRight">
+    <view class="handTitle">手写板</view>
+  </view>
+</view>

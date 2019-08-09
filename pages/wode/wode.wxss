@@ -1,1 +1,66 @@
 /* pages/wode/wode.wxss */
+.main {
+  width: 100%;
+  height: 1180rpx;
+  background-color: #f5f6f7;
+}
+.yonghu {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 30rpx;
+  background-color: white;
+}
+.avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 160rpx;
+  margin: 100rpx 40% 50rpx;
+}
+.nickname {
+  text-align: center;
+  color: #726969;
+}
+.collect {
+  width: 100%;
+  height: 600rpx;
+  margin-bottom: 30rpx;
+  background-color: white;
+}
+.collect ul {
+  list-style: none;
+  width: 100%;
+  height: 600rpx;
+  display: block;
+}
+.collect li {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height: 120rpx;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  border-top: 1px solid #e5e5e5;
+}
+.collect image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.right {
+  font-size: 60rpx;
+  color: #bbbbbb;
+}
+.fina {
+  border-bottom: 1px solid #e5e5e5;
+}
+.quit {
+  width: 100%;
+  height: 120rpx;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  color: #bfbfaf;
+  line-height: 120rpx;
+  text-align: center;
+  background-color: white;
+}

@@ -1,2 +1,36 @@
 <!--pages/wode/wode.wxml-->
-<text>pages/wode/wode.wxml</text>
+<view class="main">
+<view class="yonghu">
+<image class="avatar" src='{{avatarUrl}}'></image>
+<view class="nickname">{{nickName}}</view>
+</view>
+
+<view class="collect">
+<ul>
+<li>
+<text>我的收藏</text>
+<text class="right">></text>
+</li>
+<li>
+<text>我的订单</text>
+<text class="right">></text>
+</li>
+<li>
+<text>我的地址</text>
+<text class="right">></text>
+</li>
+<li>
+<text>联系客服</text>
+<text class="right">></text>
+</li>
+<li class="fina">
+<text>关于我们</text>
+<text class="right">></text>
+</li>
+</ul>
+</view>
+
+<view class="quit">
+退出
+</view>
+</view>
