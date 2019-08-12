@@ -1,0 +1,45 @@
+<!--pages/goods/goods.wxml-->
+<view class="photo">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+  <swiper-item>
+  <image src="{{item}}" class="slide-image"/>
+  </swiper-item>
+  </block>
+  </swiper>
+</view>
+
+<view class="collect">
+<view class="title">
+<text>{{neirong}}</text>
+<view class="price">
+<text class="red">￥344</text>
+<text class="line">￥569</text>
+</view>
+</view>
+</view>
+
+<view class="service">
+*本产品由品牌商提供发货服务
+</view>
+
+<view class="jianjie">
+我们种了一百零四棵白菜，卖了一百零一棵，只剩下这三棵了……说好了留着过年的，说好了留着过年包饺子的……”我哽咽着说。母亲靠近我，掀起衣襟，擦去了我脸上的泪水。我把脸伏在母亲的胸前，委屈地抽噎着。我感到母亲用粗糙的大手抚摸着我的头，我嗅到了她衣襟上那股揉烂了的白菜叶子的气味。
+</view>
+
+<view class="date">
+<dt>【品牌】</dt>
+<dd>凤智堂</dd>
+<dt>【品牌】</dt>
+<dd>凤智堂</dd>
+<dt>【品牌】</dt>
+<dd>凤智堂</dd>
+<dt>【品牌】</dt>
+<dd>凤智堂</dd>
+<dt>【品牌】</dt>
+<dd>凤智堂</dd>
+<dt>【品牌】</dt>
+<dd>凤智堂</dd>
+<dt>【品牌】</dt>
+<dd>凤智堂</dd>
+</view>

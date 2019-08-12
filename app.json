@@ -9,7 +9,8 @@
     "pages/nearby/nearby",
     "pages/luck/lucy",
     "pages/visit/visit",
-    "pages/luck/luck"
+    "pages/luck/luck",
+    "pages/goods/goods"
   ],
   "window": {
     "backgroundColor": "#fbf9fe",

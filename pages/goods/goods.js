@@ -1,27 +1,28 @@
-// pages/faxian/faxian.js
+// pages/goods/goods.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    discount: []
+    imgUrls: [
+      "https://f11.baidu.com/it/u=2465775762,1509670197&fm=72",
+      "https://f10.baidu.com/it/u=3087422712,1174175413&fm=72",
+      "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4283119070,1560877918&fm=26&gp=0.jpg"
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
+    neirong: "木村耀司登山旅行大学生户外情侣双肩背包外带小背包",
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    wx.request({
-      url: 'https://www.easy-mock.com/mock/5d4ce573d9e0152ef81705b7/example_copy/api/app/getimgs_copy_1565576406068',
-      success: function(res) {
-        that.setData({
-          discount: res.data.discount,
-        })
-        console.log(res.data.discount)
-      }
-    })
+    var id = options.id;
+    console.log(id)
   },
 
   /**
@@ -71,11 +72,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  goods: function(e) {
-    var i = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: '../goods/goods?id=' + i
-    })
   }
 })

@@ -4,6 +4,7 @@
 <ul>
 
 <li wx:for="{{discount}}">
+<view class="whole" bindtap="goods" data-id="{{item.id}}">
 <image src="{{item.imgUrl}}"></image>
 <text class="title">{{item.title}}</text>
 <view class="discount">
@@ -12,6 +13,7 @@
 <text class="line">{{item.before}}</text>
 </view>
 <text>{{item.time}}</text>
+</view>
 </view>
 </li>
 
