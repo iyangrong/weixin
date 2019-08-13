@@ -5,24 +5,49 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      "https://f11.baidu.com/it/u=2465775762,1509670197&fm=72",
-      "https://f10.baidu.com/it/u=3087422712,1174175413&fm=72",
-      "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4283119070,1560877918&fm=26&gp=0.jpg"
-    ],
+    id: '',
+    imgUrls: [],
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
     duration: 1000,
-    neirong: "木村耀司登山旅行大学生户外情侣双肩背包外带小背包",
+    neirong: "",
+    after: '',
+    before: '',
+    jianjie: '',
+    brand: '',
+    place: '',
+    weight: '',
+    time: '',
+    date: '',
+    fangfa: '',
+    people: '',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var id = options.id;
-    console.log(id)
+    var that = this
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5d52318ea04f5e2ea734cdc5/example/getspecific/' + options.id,
+      success: function(res) {
+        that.setData({
+          imgUrls: res.data.imgUrls,
+          neirong: res.data.neirong,
+          after: res.data.after,
+          before: res.data.before,
+          jianjie: res.data.jianjie,
+          brand: res.data.brand,
+          place: res.data.place,
+          weight: res.data.weight,
+          time: res.data.time,
+          date: res.data.date,
+          fangfa: res.data.fangfa,
+          people: res.data.people,
+        })
+      }
+    })
   },
 
   /**
