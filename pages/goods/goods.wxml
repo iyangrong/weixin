@@ -1,5 +1,6 @@
 <!--pages/goods/goods.wxml-->
 <view class="main">
+<!--轮播开始-->
 <view class="photo">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
@@ -19,6 +20,7 @@
 </view>
 </view>
 </view>
+<!--轮播结束-->
 
 <view class="service">
 *本产品由品牌商提供发货服务

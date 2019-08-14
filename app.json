@@ -10,12 +10,13 @@
     "pages/luck/lucy",
     "pages/visit/visit",
     "pages/luck/luck",
-    "pages/goods/goods"
+    "pages/goods/goods",
+    "pages/defray/defray"
   ],
   "window": {
     "backgroundColor": "#fbf9fe",
     "navigationBarBackgroundColor": "#69c3aa",
-    "navigationBarTitleText": "演示",
+    "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

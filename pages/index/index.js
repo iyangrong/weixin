@@ -8,11 +8,11 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
-    title: '',
-    img: '',
+    tv: []
   },
   onLoad: function() {
     var that = this
+    console.log(that.data.tv)
     wx.request({
       url: 'https://www.easy-mock.com/mock/5d4bba08f2b91a1e003e950c/example/api/app/getphotoes',
       success:function(res) {
@@ -23,11 +23,10 @@ Page({
       }
     }),
     wx.request({
-      url: 'https://www.easy-mock.com/mock/5d4bba08f2b91a1e003e950c/example/api/app/gethaibao',
+      url: 'https://www.easy-mock.com/mock/5d52318ea04f5e2ea734cdc5/example/gethaibao',
       success: function(res) {
         that.setData({
-          title: res.data.title,
-          img: res.data.img
+          tv: res.data.tv
         })
       }
     })

@@ -1,0 +1,11 @@
+/* pages/defray/defray.wxss */
+.information {
+  width: 100%;
+  height: 170rpx;
+  padding: 20rpx 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 35rpx;
+}

@@ -1,5 +1,6 @@
 <!--pages/wode/wode.wxml-->
 <view class="main">
+<!--头像和用户名-->
 <view class="yonghu">
 <image class="avatar" src='{{avatarUrl}}'></image>
 <view class="nickname">{{nickName}}</view>

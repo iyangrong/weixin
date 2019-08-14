@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<!--轮播开始-->
 <view class="photo">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
@@ -8,7 +9,9 @@
   </block>
   </swiper>
 </view>
+<!--轮播结束-->
 
+<!--logo-->
 <view class="block">
 <view bindtap="tapqiandao">
 <image src="http://img1.imgtn.bdimg.com/it/u=1563980539,1672265910&fm=26&gp=0.jpg" alt="图片"/>
@@ -27,8 +30,9 @@
 <span>福利</span>
 </view>
 </view>
+<!--logo结束-->
 
-<view class="huaju">
-<h2>{{title}}</h2>
-<image src="{{img}}" />
+<view class="huaju" wx:for="{{tv}}">
+<h2>{{item.title}}</h2>
+<image src="{{item.img}}" />
 </view>

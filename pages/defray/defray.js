@@ -1,12 +1,11 @@
-// pages/xiaoxi/xiaoxi.js
+// pages/defray/defray.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    num1: 1,
-    num2: 1
+
   },
 
   /**
@@ -63,43 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  sub1: function() {
-    var that = this
-    var n = that.data.num1 - 1
-    if (n < 0)
-    n = 0
-    that.setData({
-      num1: n
-    })
-  },
-  add1: function () {
-    var that = this
-    that.data.num1 = that.data.num1 + 1
-    that.setData({
-      num1: that.data.num1
-    })
-  },
-  sub2: function () {
-    var that = this
-    var n = that.data.num2 - 1
-    if(n < 0) {
-      n = 0
-    }
-    that.setData({
-      num2: n
-    })
-  },
-  add2: function () {
-    var that = this
-    that.data.num2 = that.data.num2 + 1
-    that.setData({
-      num2: that.data.num2
-    })
-  },
-  go_to_pay: function() {
-    wx.navigateTo({
-      url: '../defray/defray',
-    })
   }
 })

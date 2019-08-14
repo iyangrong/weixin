@@ -1,0 +1,5 @@
+<!--pages/defray/defray.wxml-->
+<view class="information">
+<text>电话： 13523458971</text>
+<text>地址：浙江省杭州市西湖区三西路沁雅花园12栋1单元403室</text>
+</view>

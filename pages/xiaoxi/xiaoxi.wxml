@@ -1,2 +1,48 @@
 <!--pages/xiaoxi/xiaoxi.wxml-->
-<text>pages/xiaoxi/xiaoxi.wxml</text>
+<view class="main">
+<ul>
+
+<li>
+<image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1766879406,2293059975&fm=26&gp=0.jpg" />
+<view class="details">
+<text class="title">木村耀司登山旅行大学生户外情侣双肩背包外带小背包</text>
+<view class="price">
+<text class="red">￥192.00</text>
+<view class="number">
+<view class="btn">
+<view class="sub" bindtap="sub1">-</view><view class="num">{{num1}}</view><view class="add" bindtap="add1">+</view>
+</view>
+<image class="del" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2452642529,1293660602&fm=26&gp=0.jpg" />
+</view>
+</view>
+</view>
+</li>
+
+<li>
+<image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1766879406,2293059975&fm=26&gp=0.jpg" />
+<view class="details">
+<text class="title">木村耀司登山旅行大学生户外情侣双肩背包外带小背包</text>
+<view class="price">
+<text class="red">￥192.00</text>
+<view class="number">
+<view class="btn">
+<view class="sub" bindtap="sub2">-</view><view class="num">{{num2}}</view><view class="add" bindtap="add2">+</view>
+</view>
+<image class="del" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2452642529,1293660602&fm=26&gp=0.jpg" />
+</view>
+</view>
+</view>
+</li>
+
+</ul>
+
+<view class="addgoods">
+还差<text class="red">￥100.00</text>元包邮，前往凑单
+</view>
+
+<view class="overbooking">
+<text>总价 <text class="red">￥579.00元</text></text>
+<button bindtap="go_to_pay" class="btn_overbook">下单</button>
+</view>
+
+</view>
