@@ -12,7 +12,7 @@
 <!--轮播结束-->
 
 <!--logo-->
-<view class="block">
+<view class="diamond">
 <view bindtap="tapqiandao">
 <image src="http://img1.imgtn.bdimg.com/it/u=1563980539,1672265910&fm=26&gp=0.jpg" alt="图片"/>
 <span>签到</span>

@@ -1,5 +1,33 @@
 <!--pages/defray/defray.wxml-->
+<view class="main">
 <view class="information">
 <text>电话： 13523458971</text>
 <text>地址：浙江省杭州市西湖区三西路沁雅花园12栋1单元403室</text>
+</view>
+
+<view class="product_details">
+<text class="merchandise">商品</text>
+<text class="amount">数量</text>
+<text class="total-price">总价</text>
+<text class="grey_line"></text>
+<view>
+<text class="merchandise two_cups">木村耀司登山...</text>
+<text class="amount two_cups">10</text>
+<text class="total-price two_cups">￥1920.00</text>
+</view>
+<view>
+<text class="merchandise three_cups">木村耀司登山...</text>
+<text class="amount three_cups">10</text>
+<text class="total-price three_cups">￥1920.00</text>
+</view>
+</view>
+
+<view class="fill_in_notes">
+填写备注
+</view>
+
+<view class="overbooking">
+<text>总价 <text class="red">￥579.00元</text></text>
+<button bindtap="go_to_pay" class="btn_overbook">前往支付</button>
+</view>
 </view>
