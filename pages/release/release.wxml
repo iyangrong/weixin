@@ -1,0 +1,15 @@
+<!--pages/release/release.wxml-->
+<view class="main" style="height: {{Height}}rpx">
+
+<view class="activity">
+<view class="outdoor_activity" bindtap="activity1">
+<image src="../../image/outdoor_activity.png" />
+线下活动
+</view>
+
+<view class="outdoor_activity" bindtap="activity2">
+<image src="../../image/online_activity.png" />
+线上活动
+</view>
+</view>
+</view>

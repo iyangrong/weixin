@@ -1,0 +1,88 @@
+/* pages/online_activities/online_activities.wxss */
+.main {
+  background-color: #f1f2f6;
+}
+.bgColor {
+  background-color: white;
+}
+.fill_in_form {
+  width: 100%;
+  height: 130rpx;
+  border-bottom: 1px solid #e9e9e9;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  line-height: 130rpx;
+}
+.commom_layout {
+  display: flex;
+  justify-content: space-between;
+}
+.red {
+  color: red;
+}
+.specific_time {
+  width: 50%;
+}
+.multiple_choice {
+  width: 25%;
+}
+.gray_font {
+  color: #c7c7cc;
+}
+.small_arrow {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 45rpx;
+}
+.location {
+  position: relative;
+}
+.drop_down_list {
+  width: 100%;
+  height: 180rpx;
+  position: absolute;
+  top: 130rpx;
+  left: 0;
+  z-index: 1001;
+}
+.drop_down_list_option {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #c7c7cc;
+  font-size: 30rpx;
+  border-bottom: 1px solid #e9e9e9;
+}
+.fill_in_box {
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx 5%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.activity_details {
+  margin-bottom: 40rpx;
+}
+.wechatId {
+  margin-bottom: 150rpx;
+}
+.issue {
+  width: 100%;
+  text-align: center;
+  color: #514f54;
+  display: block;
+}
+.protocol {
+  color: #527589;
+}
+.publish_campaign {
+  margin: 20rpx 10% 0;
+  height: 100rpx;
+  width: 80%;
+  color: white;
+  background-color: #69c3aa;
+  line-height: 100rpx;
+}

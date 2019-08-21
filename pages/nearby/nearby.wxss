@@ -1,1 +1,85 @@
 /* pages/nearby/nearby.wxss */
+.search_search {
+  width: 100%;
+  height: 100rpx;
+  background-color: #69c3aa;
+}
+.search {
+  width: 80%;
+  height: 80rpx;
+  margin: 0rpx 10% auto;
+  border-radius: 25rpx;
+  background-color: white;
+  padding-left: 5%;
+  box-sizing: border-box;
+  color: #aeaeae;
+}
+.photo {
+  width: 100%;
+  height: 400rpx;
+}
+swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  width: 100%;
+  height: 400rpx;
+}
+.activity {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+.activity view {
+  width: 20%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.activity image {
+  width: 84%;
+  height: 110rpx;
+  margin-left: 8%;
+}
+
+.activity text {
+  color: #aeaeae;
+}
+
+.collect {
+  width: 100%;
+  /*height: 600rpx;*/
+  background-color: white;
+}
+.collect ul {
+  list-style: none;
+  width: 100%;
+  /*height: 600rpx;*/
+  display: block;
+}
+.collect li {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height: 120rpx;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  border-top: 1px solid #e5e5e5;
+}
+.collect image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.right {
+  font-size: 60rpx;
+  color: #bbbbbb;
+}
+.fina {
+  border-bottom: 1px solid #e5e5e5;
+}

@@ -1,32 +1,23 @@
-// pages/nearby/nearby.js
+// pages/online_activities/online_activities.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
+    sdate: '2019-08-21',
+    stime: '10:00',
+    edate: '2019-08-21',
+    etime: '12:00',
+    ifShow: false,
+    default_content: '请选择'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    console.log(that.data.tv)
-    wx.request({
-      url: 'https://www.easy-mock.com/mock/5d4bba08f2b91a1e003e950c/example/api/app/getphotoes',
-      success: function (res) {
-        that.setData({
-          imgUrls: res.data.imgUrls,
-        })
-        console.log(res)
-      }
-    })
+
   },
 
   /**
@@ -77,9 +68,42 @@ Page({
   onShareAppMessage: function () {
 
   },
-  release_activity: function() {
-    wx.navigateTo({
-      url: '../release/release',
+
+  bindStartDateChange: function(e) {
+    this.setData({
+      sdate: e.detail.value
+    })
+  },
+
+  bindStartTimeChange: function(e) {
+    this.setData({
+      stime: e.detail.value
+    })
+  },
+
+  bindEndDateChange: function (e) {
+    this.setData({
+      edate: e.detail.value
+    })
+  },
+
+  bindEndTimeChange: function (e) {
+    this.setData({
+      etime: e.detail.value
+    })
+  },
+
+  bindShowMsg: function() {
+    this.setData({
+      ifShow: !this.data.ifShow
+    })
+  },
+
+  specific_options: function(e) {
+    let name = e.currentTarget.dataset.name
+    this.setData({
+      default_content: name,
+      ifShow: false
     })
   }
 })

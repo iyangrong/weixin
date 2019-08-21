@@ -16,7 +16,7 @@ swiper {
   height: 200rpx;
   display: flex;
   justify-content: space-around;
-  padding-top: 50px;
+  padding-top: 20px;
   box-sizing: border-box;
 }
 .diamond view {
@@ -25,9 +25,8 @@ swiper {
 }
 .diamond image {
   display: block;
-  width: 100%;
+  width: 100rpx;
   height: 100rpx;
-  border-radius: 200rpx;
 }
 .diamond span {
   width: 100%;
@@ -38,7 +37,7 @@ swiper {
 .huaju {
   width: 100%;
   height: 450rpx;
-   margin-top: 100rpx;
+   margin-top: 20rpx;
 }
 .huaju h2 {
   margin-left: 20%;

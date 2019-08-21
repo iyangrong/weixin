@@ -1,2 +1,50 @@
 <!--pages/nearby/nearby.wxml-->
-<text>pages/nearby/nearby.wxml</text>
+<view class="search_search">
+<input type="value" class="search" placeholder="搜索你感兴趣的活动" />
+</view>
+
+<!--轮播开始-->
+<view class="photo">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+  <swiper-item>
+  <image src="{{item}}" class="slide-image"/>
+  </swiper-item>
+  </block>
+  </swiper>
+</view>
+<!--轮播结束-->
+
+<view class="activity" bindtap="release_activity">
+<view>
+<image src="../../image/activity.png" />
+<text>发布活动</text>
+</view>
+
+<view>
+<image src="../../image/find.png" />
+<text>寻找活动</text>
+</view>
+
+<view>
+<image src="../../image/record.png" />
+<text>设置抽奖</text>
+</view>
+</view>
+
+<view class="collect">
+<ul>
+<li>
+<text>我参与的活动</text>
+<text class="right">></text>
+</li>
+<li>
+<text>我发布的活动</text>
+<text class="right">></text>
+</li>
+<li class="fina">
+<text>我收藏的活动</text>
+<text class="right">></text>
+</li>
+</ul>
+</view>

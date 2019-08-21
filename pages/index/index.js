@@ -14,7 +14,7 @@ Page({
     var that = this
     console.log(that.data.tv)
     wx.request({
-      url: 'https://www.easy-mock.com/mock/5d4bba08f2b91a1e003e950c/example/api/app/getphotoes',
+      url: 'https://www.easy-mock.com/mock/5d4ce573d9e0152ef81705b7/example_copy/api/app/getphotoes',
       success:function(res) {
         that.setData({
           imgUrls : res.data.imgUrls,

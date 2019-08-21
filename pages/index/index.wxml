@@ -14,19 +14,19 @@
 <!--logo-->
 <view class="diamond">
 <view bindtap="tapqiandao">
-<image src="http://img1.imgtn.bdimg.com/it/u=1563980539,1672265910&fm=26&gp=0.jpg" alt="图片"/>
+<image src="../../image/icon-qiandao.png" />
 <span>签到</span>
 </view>
 <view bindtap="tapfujin">
-<image src="http://img1.imgtn.bdimg.com/it/u=1563980539,1672265910&fm=26&gp=0.jpg" alt="图片"/>
-<span>附近</span>
+<image src="../../image/icon-tiyu.png" />
+<span>活动</span>
 </view>
 <view bindtap="tapyouzhan">
-<image src="http://img1.imgtn.bdimg.com/it/u=1563980539,1672265910&fm=26&gp=0.jpg" alt="图片"/>
+<image src="../../image/icon-zhanhui.png" />
 <span>游展</span>
 </view>
 <view bindtap="tapfuli">
-<image src="http://img1.imgtn.bdimg.com/it/u=1563980539,1672265910&fm=26&gp=0.jpg" alt="图片"/>
+<image src="../../image/icon-fuli.png" />
 <span>福利</span>
 </view>
 </view>

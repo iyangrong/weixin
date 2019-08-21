@@ -1,0 +1,107 @@
+<!--pages/online_activities/online_activities.wxml-->
+<view class="main">
+
+<input class="activity_title fill_in_form bgColor" type="value" placeholder="活动标题（必填）" />
+
+<!--开始时间-->
+<view class="commom_layout fill_in_form bgColor">
+
+<view class="start_end_time_red">
+<text>开始时间</text>
+<text class="red">*</text>
+</view>
+
+<view class="specific_time commom_layout">
+ 
+<picker mode="date" value="{{date}}" start="2019-08-21" end="2029-08-21" bindchange="bindStartDateChange">
+  <view class="picker">
+  {{sdate}}
+  </view>
+</picker>
+
+<picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindStartTimeChange">
+  <view class="picker">
+  {{stime}}
+  </view>
+</picker>
+ 
+</view>
+
+</view>
+
+<!--结束时间-->
+<view class="commom_layout fill_in_form bgColor">
+
+<view class="start_end_time_red">
+<text>结束时间</text>
+<text class="red">*</text>
+</view>
+
+<view class="specific_time commom_layout">
+<picker mode="date" value="{{date}}" start="2019-08-21" end="2029-08-21" bindchange="bindEndDateChange">
+  <view class="picker">
+  {{edate}}
+  </view>
+</picker>
+
+<picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindEndTimeChange">
+  <view class="picker">
+  {{etime}}
+  </view>
+</picker>
+
+</view>
+
+</view>
+
+<!--活动分类-->
+<view class="commom_layout fill_in_form location bgColor">
+
+<view class="start_end_time_red">
+<text>活动分类</text>
+<text class="red">*</text>
+</view>
+
+<view class="commom_layout multiple_choice" bindtap="bindShowMsg">
+<text class="gray_font">{{default_content}}</text>
+<image class="small_arrow" src="../../image/right_arrow.png" />
+</view>
+
+<!--选择下拉框-->
+<view class="drop_down_list bgColor" wx:if="{{ifShow}}">
+<view class="drop_down_list_option" bindtap="specific_options" data-name="投票">投票</view>
+<view class="drop_down_list_option" bindtap="specific_options" data-name="比赛"
+>比赛</view>
+<view class="drop_down_list_option" bindtap="specific_options" data-name="募捐">募捐</view>
+</view>
+
+</view>
+
+<!--填写活动摘要-->
+<textarea class="fill_in_box bgColor" placeholder="填写活动摘要（必填）"></textarea>
+
+<!--填写活动详情-->
+<textarea class="fill_in_box activity_details bgColor" placeholder="填写活动详情（必填）"></textarea>
+
+<!--开始时间-->
+<view class="commom_layout fill_in_form bgColor">
+
+<view class="start_end_time_red">
+<text>费用</text>
+<text class="red">*</text>
+</view>
+
+<view class="specific_time" style="text-align: center; color: #c7c7cc">
+暂只提供免费
+</view>
+
+</view>
+
+<!--活动助手微信-->
+<input class="activity_title fill_in_form bgColor wechatId" type="value" placeholder="活动助手微信（非必填）" />
+
+<text class="issue">发布即表示同意<text class="protocol">《活动服务协议》</text></text>
+
+<button class="publish_campaign">发布活动</button>
+
+</view>

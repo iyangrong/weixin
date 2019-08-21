@@ -6,7 +6,8 @@ Page({
    */
   data: {
     nickName: '',
-    avatarUrl: ''
+    avatarUrl: '',
+    code: '',
   },
 
   /**
@@ -14,6 +15,19 @@ Page({
    */
   onLoad: function (options) {
     var that = this
+    wx.login({
+      success: function(res) {
+        that.setData({
+          code: res.code
+        }),
+        wx.request({
+          url: 'https://test.com/onLogin',
+          data: {
+            code: res.code
+          }
+        })
+      }
+    }),
     wx.getUserInfo({
       success: function(res) {
         that.setData({

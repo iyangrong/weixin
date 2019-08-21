@@ -1,15 +1,11 @@
-// pages/nearby/nearby.js
+// pages/release/release.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
+    Height: 0
   },
 
   /**
@@ -17,15 +13,17 @@ Page({
    */
   onLoad: function (options) {
     var that = this
-    console.log(that.data.tv)
-    wx.request({
-      url: 'https://www.easy-mock.com/mock/5d4bba08f2b91a1e003e950c/example/api/app/getphotoes',
-      success: function (res) {
+    wx.getSystemInfo({
+      success: function(res) {
+        let clientHeight = res.windowHeight
+        let clientWidth = res.windowWidth
+        let rpxR = 750 / clientWidth
+        console.log(clientHeight)
         that.setData({
-          imgUrls: res.data.imgUrls,
+          Height: clientHeight * rpxR
         })
-        console.log(res)
       }
+
     })
   },
 
@@ -77,9 +75,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  release_activity: function() {
+  activity2: function() {
     wx.navigateTo({
-      url: '../release/release',
+      url: '../online_activities/online_activities',
     })
   }
 })

@@ -11,7 +11,9 @@
     "pages/visit/visit",
     "pages/luck/luck",
     "pages/goods/goods",
-    "pages/defray/defray"
+    "pages/defray/defray",
+    "pages/release/release",      
+    "pages/online_activities/online_activities"
   ],
   "window": {
     "backgroundColor": "#fbf9fe",
