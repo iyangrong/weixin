@@ -1,19 +1,16 @@
 <!--pages/faxian/faxian.wxml-->
-<view>
-<h2>限时折扣</h2>
+<view class="main">
 <ul>
 
 <li wx:for="{{discount}}">
 <view class="whole" bindtap="goods" data-id="{{item.id}}">
 <image src="{{item.imgUrl}}"></image>
+
+<view class="content_details">
 <text class="title">{{item.title}}</text>
-<view class="discount">
-<view class="price">
-<text class="red">{{item.later}}</text>
-<text class="line">{{item.before}}</text>
+<text class="red">￥{{item.later}}</text>
 </view>
-<text>{{item.time}}</text>
-</view>
+
 </view>
 </li>
 

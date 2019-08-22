@@ -12,13 +12,12 @@
 </view>
 
 <view class="collect">
-<view class="title">
+
 <text>{{neirong}}</text>
 <view class="price">
 <text class="red">￥{{after}}</text>
-<text class="line">￥{{before}}</text>
 </view>
-</view>
+
 </view>
 <!--轮播结束-->
 

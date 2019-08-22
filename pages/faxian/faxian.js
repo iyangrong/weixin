@@ -14,7 +14,7 @@ Page({
   onLoad: function (options) {
     var that = this
     wx.request({
-      url: 'https://www.easy-mock.com/mock/5d4ce573d9e0152ef81705b7/example_copy/api/app/getimgs_copy_1565576406068',
+      url: 'https://www.easy-mock.com/mock/5d4ce573d9e0152ef81705b7/example_copy/api/app/getimgs',
       success: function(res) {
         that.setData({
           discount: res.data.discount,
