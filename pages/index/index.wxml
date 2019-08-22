@@ -32,7 +32,22 @@
 </view>
 <!--logo结束-->
 
-<view class="huaju" wx:for="{{tv}}">
+<!--<view class="huaju" wx:for="{{tv}}">
 <h2>{{item.title}}</h2>
 <image src="{{item.img}}" />
+</view>-->
+
+<!--公司动态-->
+<view class="componay_dynamics common_layouts" wx:for="{{substance}}" bindtap="onClickTitle" bindtap="company_news" data-id="{{item.id}}">
+
+<image src="{{item.img}}" class="componay_dynamics_photoes" />
+
+<view class="nuts_and_bolts common_layouts">
+
+<text class="artical_title">{{item.title}}</text>
+<text class="artical_content">{{item.content}}</text>
+<text class="artical_content artical_time">{{item.time}}</text>
+
+</view>
+
 </view>

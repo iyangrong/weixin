@@ -1,0 +1,8 @@
+<!--pages/company_news/company_news.wxml-->
+<view class="main">
+
+<text class="title">{{title}}</text>
+<text class="time">发布日期：{{time}}</text>
+<text class="article">{{article}}</text>
+
+</view>

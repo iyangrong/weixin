@@ -87,22 +87,40 @@ Page({
   onShareAppMessage: function () {
 
   },
-  sub1: function() {
-    var that = this
-    var n = that.data.num1 - 1
-    if(n <= 1) {
-      n = 1
+  sub1: function(e) {
+    var i = e.currentTarget.dataset.index
+    
+    var t = this.data.goods[i].num
+    if(t == 1) {
+      t = t
     }
-    that.setData({
-      num1: n
+    else {
+      t = t - 1
+    }
+    var nu = 'goods[' + i + '].num'
+    this.setData({
+      [nu]: t
     })
   },
-  add1: function (index) {
+  add1: function (e) {
+    var i = e.currentTarget.dataset.index
+    
+    var t = this.data.goods[i].num + 1
+    
+    var nu = 'goods[' + i + '].num'
+    this.setData({
+      [nu]: t
+    })
+  },
+  deletegoods: function(e) {
     var that = this
-    var i = that.data.goods[index].num + 1;
-    console.log(i)
+    var i = e.currentTarget.dataset.index
+
+    var goods = that.data.goods
+    goods.splice(i, 1)
+
     that.setData({
-      num: i
+      goods: goods
     })
   },
   go_to_pay: function() {

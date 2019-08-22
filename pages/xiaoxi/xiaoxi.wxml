@@ -2,7 +2,7 @@
 <view class="main">
 <ul>
 
-<li wx:for="{{goods}}" >
+<li wx:for="{{goods}}" wx:for-index="key">
 <image src="{{item.imgUrl}}" />
 <view class="details">
 <text class="title">{{item.title}}</text>
@@ -10,9 +10,9 @@
 <text class="red">￥{{item.price}}</text>
 <view class="number">
 <view class="btn">
-<view class="sub" bindtap="sub1(index)">-</view><view class="num">{{item.num}}</view><view class="add" bindtap="add1(index)">+</view>
+<view class="sub" bindtap="sub1" data-index="{{key}}">-</view><view class="num">{{item.num}}</view><view class="add" bindtap="add1" data-index="{{key}}">+</view>
 </view>
-<image class="del" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2452642529,1293660602&fm=26&gp=0.jpg" />
+<image class="del" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2452642529,1293660602&fm=26&gp=0.jpg" bindtap="deletegoods" data-index="{{key}}"/>
 </view>
 </view>
 </view>

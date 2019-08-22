@@ -8,7 +8,7 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
-    tv: []
+    substance: []
   },
   onLoad: function() {
     var that = this
@@ -23,10 +23,10 @@ Page({
       }
     }),
     wx.request({
-      url: 'https://www.easy-mock.com/mock/5d52318ea04f5e2ea734cdc5/example/gethaibao',
+      url: 'https://www.easy-mock.com/mock/5d4ce573d9e0152ef81705b7/example_copy/api/app/gethaibao',
       success: function(res) {
         that.setData({
-          tv: res.data.tv
+          substance: res.data.substance
         })
       }
     })
@@ -57,4 +57,15 @@ Page({
       url: '../luck/luck',
     })
   },
+  onClickTitle: function() {
+    wx.navigateTo({
+      url: '../company_news/company_news',
+    })
+  },
+  company_news: function(e) {
+    var i = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '../company_news/company_news?id=' + i
+    })
+  }
 })

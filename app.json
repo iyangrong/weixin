@@ -13,7 +13,8 @@
     "pages/goods/goods",
     "pages/defray/defray",
     "pages/release/release",      
-    "pages/online_activities/online_activities"
+    "pages/online_activities/online_activities",
+    "pages/company_news/company_news"
   ],
   "window": {
     "backgroundColor": "#fbf9fe",
