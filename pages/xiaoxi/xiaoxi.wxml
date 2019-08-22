@@ -25,7 +25,8 @@
 </view>
 
 <view class="overbooking">
-<text>总价 <text class="red">￥{{total}}元</text></text>
+<wxs src="xiaoxi.wxs" module="xiaoxi" />
+<text>总价 <text class="red">￥{{xiaoxi.totalFn(goods)}}元</text></text>
 <button bindtap="go_to_pay" class="btn_overbook">下单</button>
 </view>
 

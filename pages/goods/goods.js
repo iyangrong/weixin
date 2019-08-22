@@ -29,6 +29,7 @@ Page({
    */
   onLoad: function (options) {
     var that = this
+    that.data.id = options.id
     wx.request({
       url: 'https://www.easy-mock.com/mock/5d52318ea04f5e2ea734cdc5/example/getspecific/' + options.id,
       success: function(res) {
@@ -97,5 +98,33 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  addCar: function(res) {
+    //获取商品信息
+    const product = {}
+    product.imgUrl = this.data.imgUrls[0]
+    product.title = this.data.neirong
+    product.price = this.data.after
+    product.id = this.data.id
+    product.num = 1
+
+    //将商品添加到购物车里
+    var flag = 1
+    var arr = wx.getStorageSync('goods') || []
+    for(var j in arr) {
+      if(arr[j].id == product.id) {
+        arr[j].num += 1
+        flag = 0
+      }
+    }
+    if(flag) {
+      arr.push(product)
+    }
+
+    wx.setStorageSync('goods', arr)
+    wx.switchTab({
+      url: '../xiaoxi/xiaoxi',
+    })
   }
+
 })

@@ -44,7 +44,7 @@
 
 <view class="shopping_car">
 <button class="orange">前往商城</button>
-<button class="blue">加入购物车</button>
+<button class="blue" bindtap="addCar">加入购物车</button>
 <button class="green">前往付款</button>
 </view>
 </view>
