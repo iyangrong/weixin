@@ -23,3 +23,9 @@ pages/xiaoxi/xiaoxi
 
 ## 活动页面
 pages/faxian/faxian
+
+## 效果图
+![效果图](https://s2.ax1x.com/2019/08/23/mDMUXQ.png)
+![效果图](https://s2.ax1x.com/2019/08/23/mDQS4P.png)
+![效果图](https://s2.ax1x.com/2019/08/23/mDQPgS.png)
+![效果图](https://s2.ax1x.com/2019/08/23/mDQ1u4.png)
