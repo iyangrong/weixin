@@ -42,9 +42,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
+    /*this.setData({
       goods: wx.getStorageSync('goods')
-    })
+    })*/
   },
 
   /**
@@ -58,7 +58,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      goods: wx.getStorageSync('goods')
+    })
   },
 
   /**
@@ -109,6 +111,8 @@ Page({
     this.setData({
       [nu]: t
     })
+
+    wx.setStorageSync('goods', this.data.goods)
   },
   add1: function (e) {
     var i = e.currentTarget.dataset.index
@@ -119,6 +123,8 @@ Page({
     this.setData({
       [nu]: t
     })
+
+    wx.setStorageSync('goods', this.data.goods)
   },
   deletegoods: function(e) {
     var that = this
@@ -130,6 +136,8 @@ Page({
     that.setData({
       goods: goods
     })
+
+    wx.setStorageSync('goods', that.data.goods)
   },
   go_to_pay: function() {
     wx.navigateTo({

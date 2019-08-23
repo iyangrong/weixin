@@ -20,9 +20,9 @@
 
 </ul>
 
-<view class="addgoods">
+<!--<view class="addgoods">
 还差<text class="red">￥100.00</text>元包邮，前往凑单
-</view>
+</view>-->
 
 <view class="overbooking">
 <wxs src="xiaoxi.wxs" module="xiaoxi" />
