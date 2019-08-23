@@ -5,14 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    cheight: 0,
+    uheight: 0,
+    goods: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let clientHeight = wx.getSystemInfoSync().windowHeight
+    let clientWidth = wx.getSystemInfoSync().windowWidth
 
+    let radio = 750 / clientWidth
+    let ccheight = radio * clientHeight
+
+    this.setData({
+      cheight: ccheight,
+      uheight: ccheight - 390
+    })
   },
 
   /**
@@ -26,7 +37,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      goods: wx.getStorageSync('goods')
+    })
+    console.log(this.data.goods)
   },
 
   /**

@@ -1,0 +1,18 @@
+var totalFn = function (item) {
+  var totalPrice = 0
+  totalPrice = item.num * item.price
+  return parseFloat(totalPrice).toFixed(2)
+}
+
+var total = function (goods) {
+  var totalt = 0
+  goods.map(function (v, k) {
+    totalt += v.price * v.num
+  })
+  return parseFloat(totalt).toFixed(2)
+}
+
+module.exports = {
+  total: total,
+  totalFn: totalFn
+}
