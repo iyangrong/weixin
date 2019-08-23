@@ -1,7 +1,9 @@
 <!--pages/xiaoxi/xiaoxi.wxml-->
-<view class="main">
-<ul>
+<view class="main" style="height: {{height}}rpx;">
 
+<ul style="height: {{uheight}}rpx;">
+
+<scroll-view scroll-y style="height: {{uheight}}rpx">
 <li wx:for="{{goods}}" wx:for-index="key">
 <image src="{{item.imgUrl}}" />
 <view class="details">
@@ -17,6 +19,7 @@
 </view>
 </view>
 </li>
+</scroll-view>
 
 </ul>
 
@@ -24,10 +27,17 @@
 还差<text class="red">￥100.00</text>元包邮，前往凑单
 </view>-->
 
-<view class="overbooking">
+<view class="overbooking" wx:if="{{isShow}}">
 <wxs src="xiaoxi.wxs" module="xiaoxi" />
 <text>总价 <text class="red">￥{{xiaoxi.totalFn(goods)}}元</text></text>
 <button bindtap="go_to_pay" class="btn_overbook">下单</button>
+</view>
+
+<!--购物车空了-->
+<view class="shopCar" wx:if="{{isAppear}}">
+<image class="shopCarImage" src="../../image/shopping_car.jpg" />
+<text class="shopCarWord">购物车是空的</text>
+<button class="shopCarButton" bindtap="go_to_goods">去逛逛</button>
 </view>
 
 </view>
