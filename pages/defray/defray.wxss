@@ -80,3 +80,92 @@
 .red {
   color: red;
 }
+.payonline {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 900rpx;
+  background-color: #f9fafa;
+}
+.confirm_payment {
+  width: 100%;
+  height: 100rpx;
+  line-height: 40rpx;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  padding: 30rpx 5%;
+  box-sizing: border-box;
+}
+.confirm_payment_image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.confirm {
+  color: #323232;
+  font-size: 40rpx;
+  margin-left: 30%;
+}
+.money {
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+  line-height: 300rpx;
+}
+.rmb {
+  color: #3c3d3d;
+  font-size: 50rpx;
+}
+.specific_price {
+  color: #3c3d3d;
+  font-size: 80rpx;
+}
+.samepay {
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 95%;
+  margin-left: 5%;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;
+}
+.alipay_mode {
+  color: #babbbb;
+}
+.alipay_bank {
+  color: #474848;
+}
+.aplipay-differ {
+  margin-right: 5%;
+}
+.alipay_image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 30rpx;
+}
+.bbank {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+.input_password {
+  width: 100%;
+  height: 200rpx;
+  background-color: #efeef0;
+  margin-top: 200rpx;
+  line-height: 200rpx;
+  font-size: 40rpx;
+  color: #7b7b7b;
+  text-align: center;
+}
+.bg_payonline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.blue_password {
+  color: #2394e6;
+}

@@ -7,7 +7,8 @@ Page({
   data: {
     cheight: 0,
     uheight: 0,
-    goods: []
+    goods: [],
+    isShow: false
   },
 
   /**
@@ -76,5 +77,17 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  go_to_pay: function() {
+    var that = this
+    that.setData({
+      isShow: true
+    })
+  },
+  disappear: function() {
+    var that = this
+    that.setData({
+      isShow: false
+    })
   }
 })

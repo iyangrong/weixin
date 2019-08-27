@@ -49,6 +49,7 @@ li image {
 }
 .red {
   color: red;
+  font-size: 33rpx;
 }
 .number {
   width: 60%;
@@ -62,6 +63,7 @@ li image {
   flex-direction: row;
   padding-top: 5%;
   box-sizing: border-box;
+  font-size: 33rpx;
 }
 .sub, .add, .num {
   width: 40%;
@@ -75,15 +77,6 @@ li image {
   height: 60rpx;
   margin-top: 25rpx;
 }
-/*.addgoods {
-  width: 100%;
-  height: 130rpx;
-  line-height: 130rpx;
-  padding-left: 20%;
-  box-sizing: border-box;
-  color: #adadad;
-  background-color: white;
-}*/
 .overbooking {
   width: 100%;
   height: 130rpx;
@@ -97,6 +90,7 @@ li image {
   box-sizing: border-box;
   position: absolute;
   bottom: 0;
+  font-size: 33rpx;
 }
 .btn_overbook {
   height: 70rpx;
