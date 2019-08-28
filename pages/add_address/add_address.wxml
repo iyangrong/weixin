@@ -1,0 +1,18 @@
+<!--pages/add_address/add_address.wxml-->
+<view class="main" style="height: {{cheight}}rpx">
+
+<!--添加收货地址-->
+<view class="preserve same_class">
+<image class="preserve_image" src="../../image/left.png" />
+<text class="add">添加收货地址</text>
+<text class="conserve">保存</text>
+</view>
+
+<input class="consignee same_class" type="value" placeholder="收货人" />
+
+<input class="consignee same_class" type="value" placeholder="手机号码" />
+
+<input class="consignee same_class map_map" type="value" placeholder="详细地址" />
+
+
+</view>

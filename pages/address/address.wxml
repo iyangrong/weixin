@@ -1,0 +1,151 @@
+<!--pages/address/address.wxml-->
+<view class="main" style="height: {{cheight}}rpx">
+
+<view class="add_address">
+<image class="add_address_img" src="../../image/left.png" />
+<text class="myaddress">我的收货地址</text>
+<text class="addaddress" bindtap="add_address">添加新地址</text>
+</view>
+
+<ul style="height: {{uheight}}rpx">
+<scroll-view scroll-y style="height: {{uheight}}rpx">
+
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+<li>
+
+<view class="address_left">
+<view class="address_left_image">杨</view>
+<view class="address_left_right">
+<view class="info">杨慧玲 12345611239</view>
+<view class="info">湖南省张家界市卢沟桥街道333号</view>
+</view>
+</view>
+
+<text class="address_middle"></text>
+
+<text class="address_right">编辑</text>
+
+</li>
+</scroll-view>
+</ul>
+</view>

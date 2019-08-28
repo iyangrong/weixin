@@ -1,4 +1,4 @@
-// pages/defray/defray.js
+// pages/add_address/add_address.js
 Page({
 
   /**
@@ -6,9 +6,6 @@ Page({
    */
   data: {
     cheight: 0,
-    uheight: 0,
-    goods: [],
-    isShow: false
   },
 
   /**
@@ -17,13 +14,11 @@ Page({
   onLoad: function (options) {
     let clientHeight = wx.getSystemInfoSync().windowHeight
     let clientWidth = wx.getSystemInfoSync().windowWidth
-
     let radio = 750 / clientWidth
-    let ccheight = radio * clientHeight
+    let height = clientHeight * radio
 
     this.setData({
-      cheight: ccheight,
-      uheight: ccheight - 390
+      cheight: height
     })
   },
 
@@ -38,10 +33,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.setData({
-      goods: wx.getStorageSync('goods')
-    })
-    console.log(this.data.goods)
+
   },
 
   /**
@@ -77,22 +69,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  go_to_pay: function() {
-    var that = this
-    that.setData({
-      isShow: true
-    })
-  },
-  disappear: function() {
-    var that = this
-    that.setData({
-      isShow: false
-    })
-  },
-  address: function() {
-    wx.navigateTo({
-      url: '../address/address',
-    })
   }
 })

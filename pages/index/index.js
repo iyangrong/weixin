@@ -63,9 +63,9 @@ Page({
     })
   },
   company_news: function(e) {
-    var i = e.currentTarget.dataset.id
+    var id = e.currentTarget.dataset.id
     wx.navigateTo({
-      url: '../company_news/company_news?id=' + i
+      url: '../company_news/company_news?id=' + id
     })
   }
 })

@@ -1,6 +1,6 @@
 <!--pages/defray/defray.wxml-->
 <view class="main" style="height: {{cheight}}rpx">
-<view class="information">
+<view class="information" bindtap="address">
 <text>姓名：林平如</text>
 <text>电话： 13523458971</text>
 <text>地址：浙江省杭州市西湖区三西路沁雅花园12栋1单元403室</text>
