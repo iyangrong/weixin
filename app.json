@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/faxian/faxian",
-    "pages/xiaoxi/xiaoxi",
+    "pages/wares/wares",
+    "pages/shopCar/shopCar",
     "pages/wode/wode",
     "pages/spdetail/spdetail",
-    "pages/pay/pay",
+    "pages/sign/sign",
     "pages/nearby/nearby",
     "pages/luck/lucy",
     "pages/visit/visit",
@@ -37,13 +37,13 @@
         "selectedIconPath": "image/shouye.png"
       },
       {
-        "pagePath": "pages/faxian/faxian",
+        "pagePath": "pages/wares/wares",
         "text": "活动",
         "iconPath": "image/huodong1.png",
         "selectedIconPath": "image/huodong.png"
       },
       {
-        "pagePath": "pages/xiaoxi/xiaoxi",
+        "pagePath": "pages/shopCar/shopCar",
         "text": "购物车",
         "iconPath": "image/car1.png",
         "selectedIconPath": "image/car.png"

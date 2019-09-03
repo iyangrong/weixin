@@ -22,6 +22,9 @@ Page({
         console.log(res.data.discount)
       }
     })
+    wx.setNavigationBarTitle({
+      title: '商品浏览',
+    })
   },
 
   /**

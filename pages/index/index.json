@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "swiper-img": "../components/swiper_img/swiper_img"
+  }
 }

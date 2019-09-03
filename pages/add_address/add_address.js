@@ -20,6 +20,10 @@ Page({
     this.setData({
       cheight: height
     })
+
+    wx.setNavigationBarTitle({
+      title: '添加地址',
+    })
   },
 
   /**

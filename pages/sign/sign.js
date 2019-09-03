@@ -46,6 +46,10 @@ Page({
       })
       this.setCanvasBg('#fff');
     }).exec();
+
+    wx.setNavigationBarTitle({
+      title: '签到',
+    })
   },
 
   /**

@@ -4,10 +4,6 @@ const app = getApp()
 Page({
   data: {
     imgUrls: [],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
     substance: []
   },
   onLoad: function() {
@@ -39,7 +35,7 @@ Page({
   },
   tapqiandao: function() {
     wx.navigateTo({
-      url: '../pay/pay',
+      url: '../sign/sign',
     })
   },
   tapfujin: function () {

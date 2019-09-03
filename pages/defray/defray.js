@@ -25,6 +25,11 @@ Page({
       cheight: ccheight,
       uheight: ccheight - 390
     })
+
+    wx.setNavigationBarTitle({
+      title: '支付',
+    })
+
   },
 
   /**

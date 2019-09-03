@@ -49,6 +49,10 @@ Page({
         })
       }
     })
+
+    wx.setNavigationBarTitle({
+      title: '商品',
+    })
   },
 
   /**
@@ -123,7 +127,7 @@ Page({
 
     wx.setStorageSync('goods', arr)
     wx.switchTab({
-      url: '../xiaoxi/xiaoxi',
+      url: '../shopCar/shopCar',
     })
   }
 

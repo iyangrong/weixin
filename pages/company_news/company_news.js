@@ -25,6 +25,9 @@ Page({
         })
       }
     })
+    wx.setNavigationBarTitle({
+      title: '新闻',
+    })
   },
 
   /**

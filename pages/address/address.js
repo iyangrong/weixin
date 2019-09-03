@@ -22,6 +22,10 @@ Page({
       cheight: cheight,
       uheight: cheight - 150
     })
+
+    wx.setNavigationBarTitle({
+      title: '地址',
+    })
   },
 
   /**

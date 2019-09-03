@@ -27,6 +27,9 @@ Page({
       height: cheight,
       uheight: cheight - 130
     })
+    wx.setNavigationBarTitle({
+      title: '购物车',
+    })
   },
 
   /**
@@ -154,7 +157,7 @@ Page({
   },
   go_to_goods: function() {
     wx.switchTab({
-      url: '../faxian/faxian'
+      url: '../wares/wares'
     })
   }
 })
